@@ -22,7 +22,7 @@ window.TowerGame = (option = {}) => {
     height,
     soundOn
   })
-  const pathGenerator = (path) => `./assets/${path}`
+  const pathGenerator = (path) => `../assets/${path}`
 
   game.addImg('background', pathGenerator('background.png'))
   game.addImg('hook', pathGenerator('hook.png'))
@@ -98,12 +98,12 @@ window.TowerGame = (option = {}) => {
   }
 
   game.start = () => {
-    const tutorial = new Instance({
-      name: 'tutorial',
-      action: tutorialAction,
-      painter: tutorialPainter
-    })
-    game.addInstance(tutorial)
+    // const tutorial = new Instance({
+    //   name: 'tutorial',
+    //   action: tutorialAction,
+    //   painter: tutorialPainter
+    // })
+    // game.addInstance(tutorial)
     const tutorialArrow = new Instance({
       name: 'tutorial-arrow',
       action: tutorialAction,

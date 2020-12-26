@@ -97,4 +97,3 @@ export const background = (engine) => {
   backgroundLinearGradient(engine)
   backgroundImg(engine)
 }
-
